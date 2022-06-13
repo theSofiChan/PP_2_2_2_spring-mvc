@@ -20,5 +20,4 @@ public class CarsController {
         model.addAttribute("cars", csi.showAllCars(count));
         return "cars";
     }
-
 }
