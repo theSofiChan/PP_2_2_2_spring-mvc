@@ -12,13 +12,11 @@
             <th>Series</th>
             <th>Color</th>
         </tr>
-        <tr th:each = "car : ${cars}">
-            <td th:utext = ${car.getBrand()}>val</td>
-            <td th:utext = ${car.getSeries()}>val</td>
-            <td th:utext = ${car.getColor()}>val</td>
-
+        <tr th:each="car : ${cars}">
+            <td th:utext=${car.getBrand()}>val</td>
+            <td th:utext=${car.getSeries()}>val</td>
+            <td th:utext=${car.getColor()}>val</td>
         </tr>
-
     </table>
 </div>
 </body>

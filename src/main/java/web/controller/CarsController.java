@@ -1,4 +1,5 @@
 package web.controller;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,14 +15,10 @@ public class CarsController {
         this.csi = csi;
     }
 
-
     @GetMapping("/cars")
-    public String showAllCars(Model model, String count){
+    public String showAllCars(Model model, String count) {
         model.addAttribute("cars", csi.showAllCars(count));
         return "cars";
     }
-
-
-
 
 }
